@@ -214,6 +214,15 @@ references:
   isSpec: "True"
   fullName: HarmonyLib.AccessTools.FieldRefAccess
   nameWithType: AccessTools.FieldRefAccess
+- uid: HarmonyLib.AccessTools.FieldRefAccess``1(System.Type,System.String)
+  name: FieldRefAccess<F>(Type, String)
+  href: api/HarmonyLib.AccessTools.html#HarmonyLib_AccessTools_FieldRefAccess__1_System_Type_System_String_
+  commentId: M:HarmonyLib.AccessTools.FieldRefAccess``1(System.Type,System.String)
+  name.vb: FieldRefAccess(Of F)(Type, String)
+  fullName: HarmonyLib.AccessTools.FieldRefAccess<F>(System.Type, System.String)
+  fullName.vb: HarmonyLib.AccessTools.FieldRefAccess(Of F)(System.Type, System.String)
+  nameWithType: AccessTools.FieldRefAccess<F>(Type, String)
+  nameWithType.vb: AccessTools.FieldRefAccess(Of F)(Type, String)
 - uid: HarmonyLib.AccessTools.FieldRefAccess``2(``0,System.String)
   name: FieldRefAccess<T, F>(T, String)
   href: api/HarmonyLib.AccessTools.html#HarmonyLib_AccessTools_FieldRefAccess__2___0_System_String_
@@ -822,6 +831,24 @@ references:
   fullName.vb: HarmonyLib.AccessTools.StaticFieldRefAccess(Of F)(System.Reflection.FieldInfo)
   nameWithType: AccessTools.StaticFieldRefAccess<F>(FieldInfo)
   nameWithType.vb: AccessTools.StaticFieldRefAccess(Of F)(FieldInfo)
+- uid: HarmonyLib.AccessTools.StaticFieldRefAccess``1(System.Type,System.String)
+  name: StaticFieldRefAccess<F>(Type, String)
+  href: api/HarmonyLib.AccessTools.html#HarmonyLib_AccessTools_StaticFieldRefAccess__1_System_Type_System_String_
+  commentId: M:HarmonyLib.AccessTools.StaticFieldRefAccess``1(System.Type,System.String)
+  name.vb: StaticFieldRefAccess(Of F)(Type, String)
+  fullName: HarmonyLib.AccessTools.StaticFieldRefAccess<F>(System.Type, System.String)
+  fullName.vb: HarmonyLib.AccessTools.StaticFieldRefAccess(Of F)(System.Type, System.String)
+  nameWithType: AccessTools.StaticFieldRefAccess<F>(Type, String)
+  nameWithType.vb: AccessTools.StaticFieldRefAccess(Of F)(Type, String)
+- uid: HarmonyLib.AccessTools.StaticFieldRefAccess``2(System.Reflection.FieldInfo)
+  name: StaticFieldRefAccess<T, F>(FieldInfo)
+  href: api/HarmonyLib.AccessTools.html#HarmonyLib_AccessTools_StaticFieldRefAccess__2_System_Reflection_FieldInfo_
+  commentId: M:HarmonyLib.AccessTools.StaticFieldRefAccess``2(System.Reflection.FieldInfo)
+  name.vb: StaticFieldRefAccess(Of T, F)(FieldInfo)
+  fullName: HarmonyLib.AccessTools.StaticFieldRefAccess<T, F>(System.Reflection.FieldInfo)
+  fullName.vb: HarmonyLib.AccessTools.StaticFieldRefAccess(Of T, F)(System.Reflection.FieldInfo)
+  nameWithType: AccessTools.StaticFieldRefAccess<T, F>(FieldInfo)
+  nameWithType.vb: AccessTools.StaticFieldRefAccess(Of T, F)(FieldInfo)
 - uid: HarmonyLib.AccessTools.StaticFieldRefAccess``2(System.String)
   name: StaticFieldRefAccess<T, F>(String)
   href: api/HarmonyLib.AccessTools.html#HarmonyLib_AccessTools_StaticFieldRefAccess__2_System_String_
@@ -921,6 +948,64 @@ references:
   commentId: F:HarmonyLib.CodeInstruction.blocks
   fullName: HarmonyLib.CodeInstruction.blocks
   nameWithType: CodeInstruction.blocks
+- uid: HarmonyLib.CodeInstruction.Call(System.Linq.Expressions.Expression{System.Action})
+  name: Call(Expression<Action>)
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_Call_System_Linq_Expressions_Expression_System_Action__
+  commentId: M:HarmonyLib.CodeInstruction.Call(System.Linq.Expressions.Expression{System.Action})
+  name.vb: Call(Expression(Of Action))
+  fullName: HarmonyLib.CodeInstruction.Call(System.Linq.Expressions.Expression<System.Action>)
+  fullName.vb: HarmonyLib.CodeInstruction.Call(System.Linq.Expressions.Expression(Of System.Action))
+  nameWithType: CodeInstruction.Call(Expression<Action>)
+  nameWithType.vb: CodeInstruction.Call(Expression(Of Action))
+- uid: HarmonyLib.CodeInstruction.Call(System.Linq.Expressions.LambdaExpression)
+  name: Call(LambdaExpression)
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_Call_System_Linq_Expressions_LambdaExpression_
+  commentId: M:HarmonyLib.CodeInstruction.Call(System.Linq.Expressions.LambdaExpression)
+  fullName: HarmonyLib.CodeInstruction.Call(System.Linq.Expressions.LambdaExpression)
+  nameWithType: CodeInstruction.Call(LambdaExpression)
+- uid: HarmonyLib.CodeInstruction.Call(System.String,System.Type[],System.Type[])
+  name: Call(String, Type[], Type[])
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_Call_System_String_System_Type___System_Type___
+  commentId: M:HarmonyLib.CodeInstruction.Call(System.String,System.Type[],System.Type[])
+  name.vb: Call(String, Type(), Type())
+  fullName: HarmonyLib.CodeInstruction.Call(System.String, System.Type[], System.Type[])
+  fullName.vb: HarmonyLib.CodeInstruction.Call(System.String, System.Type(), System.Type())
+  nameWithType: CodeInstruction.Call(String, Type[], Type[])
+  nameWithType.vb: CodeInstruction.Call(String, Type(), Type())
+- uid: HarmonyLib.CodeInstruction.Call(System.Type,System.String,System.Type[],System.Type[])
+  name: Call(Type, String, Type[], Type[])
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_Call_System_Type_System_String_System_Type___System_Type___
+  commentId: M:HarmonyLib.CodeInstruction.Call(System.Type,System.String,System.Type[],System.Type[])
+  name.vb: Call(Type, String, Type(), Type())
+  fullName: HarmonyLib.CodeInstruction.Call(System.Type, System.String, System.Type[], System.Type[])
+  fullName.vb: HarmonyLib.CodeInstruction.Call(System.Type, System.String, System.Type(), System.Type())
+  nameWithType: CodeInstruction.Call(Type, String, Type[], Type[])
+  nameWithType.vb: CodeInstruction.Call(Type, String, Type(), Type())
+- uid: HarmonyLib.CodeInstruction.Call*
+  name: Call
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_Call_
+  commentId: Overload:HarmonyLib.CodeInstruction.Call
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstruction.Call
+  nameWithType: CodeInstruction.Call
+- uid: HarmonyLib.CodeInstruction.Call``1(System.Linq.Expressions.Expression{System.Action{``0}})
+  name: Call<T>(Expression<Action<T>>)
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_Call__1_System_Linq_Expressions_Expression_System_Action___0___
+  commentId: M:HarmonyLib.CodeInstruction.Call``1(System.Linq.Expressions.Expression{System.Action{``0}})
+  name.vb: Call(Of T)(Expression(Of Action(Of T)))
+  fullName: HarmonyLib.CodeInstruction.Call<T>(System.Linq.Expressions.Expression<System.Action<T>>)
+  fullName.vb: HarmonyLib.CodeInstruction.Call(Of T)(System.Linq.Expressions.Expression(Of System.Action(Of T)))
+  nameWithType: CodeInstruction.Call<T>(Expression<Action<T>>)
+  nameWithType.vb: CodeInstruction.Call(Of T)(Expression(Of Action(Of T)))
+- uid: HarmonyLib.CodeInstruction.Call``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  name: Call<T, TResult>(Expression<Func<T, TResult>>)
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_Call__2_System_Linq_Expressions_Expression_System_Func___0___1___
+  commentId: M:HarmonyLib.CodeInstruction.Call``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  name.vb: Call(Of T, TResult)(Expression(Of Func(Of T, TResult)))
+  fullName: HarmonyLib.CodeInstruction.Call<T, TResult>(System.Linq.Expressions.Expression<System.Func<T, TResult>>)
+  fullName.vb: HarmonyLib.CodeInstruction.Call(Of T, TResult)(System.Linq.Expressions.Expression(Of System.Func(Of T, TResult)))
+  nameWithType: CodeInstruction.Call<T, TResult>(Expression<Func<T, TResult>>)
+  nameWithType.vb: CodeInstruction.Call(Of T, TResult)(Expression(Of Func(Of T, TResult)))
 - uid: HarmonyLib.CodeInstruction.Clone
   name: Clone()
   href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_Clone
@@ -952,6 +1037,19 @@ references:
   commentId: F:HarmonyLib.CodeInstruction.labels
   fullName: HarmonyLib.CodeInstruction.labels
   nameWithType: CodeInstruction.labels
+- uid: HarmonyLib.CodeInstruction.LoadField(System.Type,System.String,System.Boolean)
+  name: LoadField(Type, String, Boolean)
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_LoadField_System_Type_System_String_System_Boolean_
+  commentId: M:HarmonyLib.CodeInstruction.LoadField(System.Type,System.String,System.Boolean)
+  fullName: HarmonyLib.CodeInstruction.LoadField(System.Type, System.String, System.Boolean)
+  nameWithType: CodeInstruction.LoadField(Type, String, Boolean)
+- uid: HarmonyLib.CodeInstruction.LoadField*
+  name: LoadField
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_LoadField_
+  commentId: Overload:HarmonyLib.CodeInstruction.LoadField
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstruction.LoadField
+  nameWithType: CodeInstruction.LoadField
 - uid: HarmonyLib.CodeInstruction.opcode
   name: opcode
   href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_opcode
@@ -964,6 +1062,19 @@ references:
   commentId: F:HarmonyLib.CodeInstruction.operand
   fullName: HarmonyLib.CodeInstruction.operand
   nameWithType: CodeInstruction.operand
+- uid: HarmonyLib.CodeInstruction.StoreField(System.Type,System.String)
+  name: StoreField(Type, String)
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_StoreField_System_Type_System_String_
+  commentId: M:HarmonyLib.CodeInstruction.StoreField(System.Type,System.String)
+  fullName: HarmonyLib.CodeInstruction.StoreField(System.Type, System.String)
+  nameWithType: CodeInstruction.StoreField(Type, String)
+- uid: HarmonyLib.CodeInstruction.StoreField*
+  name: StoreField
+  href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_StoreField_
+  commentId: Overload:HarmonyLib.CodeInstruction.StoreField
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstruction.StoreField
+  nameWithType: CodeInstruction.StoreField
 - uid: HarmonyLib.CodeInstruction.ToString
   name: ToString()
   href: api/HarmonyLib.CodeInstruction.html#HarmonyLib_CodeInstruction_ToString
@@ -1012,6 +1123,32 @@ references:
   isSpec: "True"
   fullName: HarmonyLib.CodeInstructionExtensions.Calls
   nameWithType: CodeInstructionExtensions.Calls
+- uid: HarmonyLib.CodeInstructionExtensions.ExtractBlocks(HarmonyLib.CodeInstruction)
+  name: ExtractBlocks(CodeInstruction)
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_ExtractBlocks_HarmonyLib_CodeInstruction_
+  commentId: M:HarmonyLib.CodeInstructionExtensions.ExtractBlocks(HarmonyLib.CodeInstruction)
+  fullName: HarmonyLib.CodeInstructionExtensions.ExtractBlocks(HarmonyLib.CodeInstruction)
+  nameWithType: CodeInstructionExtensions.ExtractBlocks(CodeInstruction)
+- uid: HarmonyLib.CodeInstructionExtensions.ExtractBlocks*
+  name: ExtractBlocks
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_ExtractBlocks_
+  commentId: Overload:HarmonyLib.CodeInstructionExtensions.ExtractBlocks
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstructionExtensions.ExtractBlocks
+  nameWithType: CodeInstructionExtensions.ExtractBlocks
+- uid: HarmonyLib.CodeInstructionExtensions.ExtractLabels(HarmonyLib.CodeInstruction)
+  name: ExtractLabels(CodeInstruction)
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_ExtractLabels_HarmonyLib_CodeInstruction_
+  commentId: M:HarmonyLib.CodeInstructionExtensions.ExtractLabels(HarmonyLib.CodeInstruction)
+  fullName: HarmonyLib.CodeInstructionExtensions.ExtractLabels(HarmonyLib.CodeInstruction)
+  nameWithType: CodeInstructionExtensions.ExtractLabels(CodeInstruction)
+- uid: HarmonyLib.CodeInstructionExtensions.ExtractLabels*
+  name: ExtractLabels
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_ExtractLabels_
+  commentId: Overload:HarmonyLib.CodeInstructionExtensions.ExtractLabels
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstructionExtensions.ExtractLabels
+  nameWithType: CodeInstructionExtensions.ExtractLabels
 - uid: HarmonyLib.CodeInstructionExtensions.Is(HarmonyLib.CodeInstruction,System.Reflection.Emit.OpCode,System.Object)
   name: Is(CodeInstruction, OpCode, Object)
   href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_Is_HarmonyLib_CodeInstruction_System_Reflection_Emit_OpCode_System_Object_
@@ -1143,6 +1280,58 @@ references:
   isSpec: "True"
   fullName: HarmonyLib.CodeInstructionExtensions.LoadsField
   nameWithType: CodeInstructionExtensions.LoadsField
+- uid: HarmonyLib.CodeInstructionExtensions.MoveBlocksFrom(HarmonyLib.CodeInstruction,HarmonyLib.CodeInstruction)
+  name: MoveBlocksFrom(CodeInstruction, CodeInstruction)
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_MoveBlocksFrom_HarmonyLib_CodeInstruction_HarmonyLib_CodeInstruction_
+  commentId: M:HarmonyLib.CodeInstructionExtensions.MoveBlocksFrom(HarmonyLib.CodeInstruction,HarmonyLib.CodeInstruction)
+  fullName: HarmonyLib.CodeInstructionExtensions.MoveBlocksFrom(HarmonyLib.CodeInstruction, HarmonyLib.CodeInstruction)
+  nameWithType: CodeInstructionExtensions.MoveBlocksFrom(CodeInstruction, CodeInstruction)
+- uid: HarmonyLib.CodeInstructionExtensions.MoveBlocksFrom*
+  name: MoveBlocksFrom
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_MoveBlocksFrom_
+  commentId: Overload:HarmonyLib.CodeInstructionExtensions.MoveBlocksFrom
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstructionExtensions.MoveBlocksFrom
+  nameWithType: CodeInstructionExtensions.MoveBlocksFrom
+- uid: HarmonyLib.CodeInstructionExtensions.MoveBlocksTo(HarmonyLib.CodeInstruction,HarmonyLib.CodeInstruction)
+  name: MoveBlocksTo(CodeInstruction, CodeInstruction)
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_MoveBlocksTo_HarmonyLib_CodeInstruction_HarmonyLib_CodeInstruction_
+  commentId: M:HarmonyLib.CodeInstructionExtensions.MoveBlocksTo(HarmonyLib.CodeInstruction,HarmonyLib.CodeInstruction)
+  fullName: HarmonyLib.CodeInstructionExtensions.MoveBlocksTo(HarmonyLib.CodeInstruction, HarmonyLib.CodeInstruction)
+  nameWithType: CodeInstructionExtensions.MoveBlocksTo(CodeInstruction, CodeInstruction)
+- uid: HarmonyLib.CodeInstructionExtensions.MoveBlocksTo*
+  name: MoveBlocksTo
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_MoveBlocksTo_
+  commentId: Overload:HarmonyLib.CodeInstructionExtensions.MoveBlocksTo
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstructionExtensions.MoveBlocksTo
+  nameWithType: CodeInstructionExtensions.MoveBlocksTo
+- uid: HarmonyLib.CodeInstructionExtensions.MoveLabelsFrom(HarmonyLib.CodeInstruction,HarmonyLib.CodeInstruction)
+  name: MoveLabelsFrom(CodeInstruction, CodeInstruction)
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_MoveLabelsFrom_HarmonyLib_CodeInstruction_HarmonyLib_CodeInstruction_
+  commentId: M:HarmonyLib.CodeInstructionExtensions.MoveLabelsFrom(HarmonyLib.CodeInstruction,HarmonyLib.CodeInstruction)
+  fullName: HarmonyLib.CodeInstructionExtensions.MoveLabelsFrom(HarmonyLib.CodeInstruction, HarmonyLib.CodeInstruction)
+  nameWithType: CodeInstructionExtensions.MoveLabelsFrom(CodeInstruction, CodeInstruction)
+- uid: HarmonyLib.CodeInstructionExtensions.MoveLabelsFrom*
+  name: MoveLabelsFrom
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_MoveLabelsFrom_
+  commentId: Overload:HarmonyLib.CodeInstructionExtensions.MoveLabelsFrom
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstructionExtensions.MoveLabelsFrom
+  nameWithType: CodeInstructionExtensions.MoveLabelsFrom
+- uid: HarmonyLib.CodeInstructionExtensions.MoveLabelsTo(HarmonyLib.CodeInstruction,HarmonyLib.CodeInstruction)
+  name: MoveLabelsTo(CodeInstruction, CodeInstruction)
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_MoveLabelsTo_HarmonyLib_CodeInstruction_HarmonyLib_CodeInstruction_
+  commentId: M:HarmonyLib.CodeInstructionExtensions.MoveLabelsTo(HarmonyLib.CodeInstruction,HarmonyLib.CodeInstruction)
+  fullName: HarmonyLib.CodeInstructionExtensions.MoveLabelsTo(HarmonyLib.CodeInstruction, HarmonyLib.CodeInstruction)
+  nameWithType: CodeInstructionExtensions.MoveLabelsTo(CodeInstruction, CodeInstruction)
+- uid: HarmonyLib.CodeInstructionExtensions.MoveLabelsTo*
+  name: MoveLabelsTo
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_MoveLabelsTo_
+  commentId: Overload:HarmonyLib.CodeInstructionExtensions.MoveLabelsTo
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstructionExtensions.MoveLabelsTo
+  nameWithType: CodeInstructionExtensions.MoveLabelsTo
 - uid: HarmonyLib.CodeInstructionExtensions.OperandIs(HarmonyLib.CodeInstruction,System.Object)
   name: OperandIs(CodeInstruction, Object)
   href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_OperandIs_HarmonyLib_CodeInstruction_System_Object_
@@ -1169,6 +1358,56 @@ references:
   isSpec: "True"
   fullName: HarmonyLib.CodeInstructionExtensions.StoresField
   nameWithType: CodeInstructionExtensions.StoresField
+- uid: HarmonyLib.CodeInstructionExtensions.WithBlocks(HarmonyLib.CodeInstruction,HarmonyLib.ExceptionBlock[])
+  name: WithBlocks(CodeInstruction, ExceptionBlock[])
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_WithBlocks_HarmonyLib_CodeInstruction_HarmonyLib_ExceptionBlock___
+  commentId: M:HarmonyLib.CodeInstructionExtensions.WithBlocks(HarmonyLib.CodeInstruction,HarmonyLib.ExceptionBlock[])
+  name.vb: WithBlocks(CodeInstruction, ExceptionBlock())
+  fullName: HarmonyLib.CodeInstructionExtensions.WithBlocks(HarmonyLib.CodeInstruction, HarmonyLib.ExceptionBlock[])
+  fullName.vb: HarmonyLib.CodeInstructionExtensions.WithBlocks(HarmonyLib.CodeInstruction, HarmonyLib.ExceptionBlock())
+  nameWithType: CodeInstructionExtensions.WithBlocks(CodeInstruction, ExceptionBlock[])
+  nameWithType.vb: CodeInstructionExtensions.WithBlocks(CodeInstruction, ExceptionBlock())
+- uid: HarmonyLib.CodeInstructionExtensions.WithBlocks(HarmonyLib.CodeInstruction,System.Collections.Generic.IEnumerable{HarmonyLib.ExceptionBlock})
+  name: WithBlocks(CodeInstruction, IEnumerable<ExceptionBlock>)
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_WithBlocks_HarmonyLib_CodeInstruction_System_Collections_Generic_IEnumerable_HarmonyLib_ExceptionBlock__
+  commentId: M:HarmonyLib.CodeInstructionExtensions.WithBlocks(HarmonyLib.CodeInstruction,System.Collections.Generic.IEnumerable{HarmonyLib.ExceptionBlock})
+  name.vb: WithBlocks(CodeInstruction, IEnumerable(Of ExceptionBlock))
+  fullName: HarmonyLib.CodeInstructionExtensions.WithBlocks(HarmonyLib.CodeInstruction, System.Collections.Generic.IEnumerable<HarmonyLib.ExceptionBlock>)
+  fullName.vb: HarmonyLib.CodeInstructionExtensions.WithBlocks(HarmonyLib.CodeInstruction, System.Collections.Generic.IEnumerable(Of HarmonyLib.ExceptionBlock))
+  nameWithType: CodeInstructionExtensions.WithBlocks(CodeInstruction, IEnumerable<ExceptionBlock>)
+  nameWithType.vb: CodeInstructionExtensions.WithBlocks(CodeInstruction, IEnumerable(Of ExceptionBlock))
+- uid: HarmonyLib.CodeInstructionExtensions.WithBlocks*
+  name: WithBlocks
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_WithBlocks_
+  commentId: Overload:HarmonyLib.CodeInstructionExtensions.WithBlocks
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstructionExtensions.WithBlocks
+  nameWithType: CodeInstructionExtensions.WithBlocks
+- uid: HarmonyLib.CodeInstructionExtensions.WithLabels(HarmonyLib.CodeInstruction,System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label})
+  name: WithLabels(CodeInstruction, IEnumerable<Label>)
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_WithLabels_HarmonyLib_CodeInstruction_System_Collections_Generic_IEnumerable_System_Reflection_Emit_Label__
+  commentId: M:HarmonyLib.CodeInstructionExtensions.WithLabels(HarmonyLib.CodeInstruction,System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label})
+  name.vb: WithLabels(CodeInstruction, IEnumerable(Of Label))
+  fullName: HarmonyLib.CodeInstructionExtensions.WithLabels(HarmonyLib.CodeInstruction, System.Collections.Generic.IEnumerable<System.Reflection.Emit.Label>)
+  fullName.vb: HarmonyLib.CodeInstructionExtensions.WithLabels(HarmonyLib.CodeInstruction, System.Collections.Generic.IEnumerable(Of System.Reflection.Emit.Label))
+  nameWithType: CodeInstructionExtensions.WithLabels(CodeInstruction, IEnumerable<Label>)
+  nameWithType.vb: CodeInstructionExtensions.WithLabels(CodeInstruction, IEnumerable(Of Label))
+- uid: HarmonyLib.CodeInstructionExtensions.WithLabels(HarmonyLib.CodeInstruction,System.Reflection.Emit.Label[])
+  name: WithLabels(CodeInstruction, Label[])
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_WithLabels_HarmonyLib_CodeInstruction_System_Reflection_Emit_Label___
+  commentId: M:HarmonyLib.CodeInstructionExtensions.WithLabels(HarmonyLib.CodeInstruction,System.Reflection.Emit.Label[])
+  name.vb: WithLabels(CodeInstruction, Label())
+  fullName: HarmonyLib.CodeInstructionExtensions.WithLabels(HarmonyLib.CodeInstruction, System.Reflection.Emit.Label[])
+  fullName.vb: HarmonyLib.CodeInstructionExtensions.WithLabels(HarmonyLib.CodeInstruction, System.Reflection.Emit.Label())
+  nameWithType: CodeInstructionExtensions.WithLabels(CodeInstruction, Label[])
+  nameWithType.vb: CodeInstructionExtensions.WithLabels(CodeInstruction, Label())
+- uid: HarmonyLib.CodeInstructionExtensions.WithLabels*
+  name: WithLabels
+  href: api/HarmonyLib.CodeInstructionExtensions.html#HarmonyLib_CodeInstructionExtensions_WithLabels_
+  commentId: Overload:HarmonyLib.CodeInstructionExtensions.WithLabels
+  isSpec: "True"
+  fullName: HarmonyLib.CodeInstructionExtensions.WithLabels
+  nameWithType: CodeInstructionExtensions.WithLabels
 - uid: HarmonyLib.CollectionExtensions
   name: CollectionExtensions
   href: api/HarmonyLib.CollectionExtensions.html
@@ -2910,6 +3149,25 @@ references:
   isSpec: "True"
   fullName: HarmonyLib.Memory.WriteJump
   nameWithType: Memory.WriteJump
+- uid: HarmonyLib.MethodBaseExtensions
+  name: MethodBaseExtensions
+  href: api/HarmonyLib.MethodBaseExtensions.html
+  commentId: T:HarmonyLib.MethodBaseExtensions
+  fullName: HarmonyLib.MethodBaseExtensions
+  nameWithType: MethodBaseExtensions
+- uid: HarmonyLib.MethodBaseExtensions.HasMethodBody(System.Reflection.MethodBase)
+  name: HasMethodBody(MethodBase)
+  href: api/HarmonyLib.MethodBaseExtensions.html#HarmonyLib_MethodBaseExtensions_HasMethodBody_System_Reflection_MethodBase_
+  commentId: M:HarmonyLib.MethodBaseExtensions.HasMethodBody(System.Reflection.MethodBase)
+  fullName: HarmonyLib.MethodBaseExtensions.HasMethodBody(System.Reflection.MethodBase)
+  nameWithType: MethodBaseExtensions.HasMethodBody(MethodBase)
+- uid: HarmonyLib.MethodBaseExtensions.HasMethodBody*
+  name: HasMethodBody
+  href: api/HarmonyLib.MethodBaseExtensions.html#HarmonyLib_MethodBaseExtensions_HasMethodBody_
+  commentId: Overload:HarmonyLib.MethodBaseExtensions.HasMethodBody
+  isSpec: "True"
+  fullName: HarmonyLib.MethodBaseExtensions.HasMethodBody
+  nameWithType: MethodBaseExtensions.HasMethodBody
 - uid: HarmonyLib.MethodInvoker
   name: MethodInvoker
   href: api/HarmonyLib.MethodInvoker.html
@@ -3459,6 +3717,19 @@ references:
   isSpec: "True"
   fullName: HarmonyLib.PatchProcessor.AddTranspiler
   nameWithType: PatchProcessor.AddTranspiler
+- uid: HarmonyLib.PatchProcessor.CreateILGenerator
+  name: CreateILGenerator()
+  href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_CreateILGenerator
+  commentId: M:HarmonyLib.PatchProcessor.CreateILGenerator
+  fullName: HarmonyLib.PatchProcessor.CreateILGenerator()
+  nameWithType: PatchProcessor.CreateILGenerator()
+- uid: HarmonyLib.PatchProcessor.CreateILGenerator*
+  name: CreateILGenerator
+  href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_CreateILGenerator_
+  commentId: Overload:HarmonyLib.PatchProcessor.CreateILGenerator
+  isSpec: "True"
+  fullName: HarmonyLib.PatchProcessor.CreateILGenerator
+  nameWithType: PatchProcessor.CreateILGenerator
 - uid: HarmonyLib.PatchProcessor.GetAllPatchedMethods
   name: GetAllPatchedMethods()
   href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_GetAllPatchedMethods
@@ -3472,6 +3743,28 @@ references:
   isSpec: "True"
   fullName: HarmonyLib.PatchProcessor.GetAllPatchedMethods
   nameWithType: PatchProcessor.GetAllPatchedMethods
+- uid: HarmonyLib.PatchProcessor.GetCurrentInstructions(System.Reflection.MethodBase,System.Int32,System.Reflection.Emit.ILGenerator)
+  name: GetCurrentInstructions(MethodBase, Int32, ILGenerator)
+  href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_GetCurrentInstructions_System_Reflection_MethodBase_System_Int32_System_Reflection_Emit_ILGenerator_
+  commentId: M:HarmonyLib.PatchProcessor.GetCurrentInstructions(System.Reflection.MethodBase,System.Int32,System.Reflection.Emit.ILGenerator)
+  fullName: HarmonyLib.PatchProcessor.GetCurrentInstructions(System.Reflection.MethodBase, System.Int32, System.Reflection.Emit.ILGenerator)
+  nameWithType: PatchProcessor.GetCurrentInstructions(MethodBase, Int32, ILGenerator)
+- uid: HarmonyLib.PatchProcessor.GetCurrentInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator@,System.Int32)
+  name: GetCurrentInstructions(MethodBase, out ILGenerator, Int32)
+  href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_GetCurrentInstructions_System_Reflection_MethodBase_System_Reflection_Emit_ILGenerator__System_Int32_
+  commentId: M:HarmonyLib.PatchProcessor.GetCurrentInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator@,System.Int32)
+  name.vb: GetCurrentInstructions(MethodBase, ByRef ILGenerator, Int32)
+  fullName: HarmonyLib.PatchProcessor.GetCurrentInstructions(System.Reflection.MethodBase, out System.Reflection.Emit.ILGenerator, System.Int32)
+  fullName.vb: HarmonyLib.PatchProcessor.GetCurrentInstructions(System.Reflection.MethodBase, ByRef System.Reflection.Emit.ILGenerator, System.Int32)
+  nameWithType: PatchProcessor.GetCurrentInstructions(MethodBase, out ILGenerator, Int32)
+  nameWithType.vb: PatchProcessor.GetCurrentInstructions(MethodBase, ByRef ILGenerator, Int32)
+- uid: HarmonyLib.PatchProcessor.GetCurrentInstructions*
+  name: GetCurrentInstructions
+  href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_GetCurrentInstructions_
+  commentId: Overload:HarmonyLib.PatchProcessor.GetCurrentInstructions
+  isSpec: "True"
+  fullName: HarmonyLib.PatchProcessor.GetCurrentInstructions
+  nameWithType: PatchProcessor.GetCurrentInstructions
 - uid: HarmonyLib.PatchProcessor.GetOriginalInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator)
   name: GetOriginalInstructions(MethodBase, ILGenerator)
   href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_GetOriginalInstructions_System_Reflection_MethodBase_System_Reflection_Emit_ILGenerator_
@@ -3507,6 +3800,22 @@ references:
   isSpec: "True"
   fullName: HarmonyLib.PatchProcessor.GetPatchInfo
   nameWithType: PatchProcessor.GetPatchInfo
+- uid: HarmonyLib.PatchProcessor.GetSortedPatchMethods(System.Reflection.MethodBase,HarmonyLib.Patch[])
+  name: GetSortedPatchMethods(MethodBase, Patch[])
+  href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_GetSortedPatchMethods_System_Reflection_MethodBase_HarmonyLib_Patch___
+  commentId: M:HarmonyLib.PatchProcessor.GetSortedPatchMethods(System.Reflection.MethodBase,HarmonyLib.Patch[])
+  name.vb: GetSortedPatchMethods(MethodBase, Patch())
+  fullName: HarmonyLib.PatchProcessor.GetSortedPatchMethods(System.Reflection.MethodBase, HarmonyLib.Patch[])
+  fullName.vb: HarmonyLib.PatchProcessor.GetSortedPatchMethods(System.Reflection.MethodBase, HarmonyLib.Patch())
+  nameWithType: PatchProcessor.GetSortedPatchMethods(MethodBase, Patch[])
+  nameWithType.vb: PatchProcessor.GetSortedPatchMethods(MethodBase, Patch())
+- uid: HarmonyLib.PatchProcessor.GetSortedPatchMethods*
+  name: GetSortedPatchMethods
+  href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_GetSortedPatchMethods_
+  commentId: Overload:HarmonyLib.PatchProcessor.GetSortedPatchMethods
+  isSpec: "True"
+  fullName: HarmonyLib.PatchProcessor.GetSortedPatchMethods
+  nameWithType: PatchProcessor.GetSortedPatchMethods
 - uid: HarmonyLib.PatchProcessor.Patch
   name: Patch()
   href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_Patch
@@ -3526,6 +3835,12 @@ references:
   commentId: M:HarmonyLib.PatchProcessor.ReadMethodBody(System.Reflection.MethodBase)
   fullName: HarmonyLib.PatchProcessor.ReadMethodBody(System.Reflection.MethodBase)
   nameWithType: PatchProcessor.ReadMethodBody(MethodBase)
+- uid: HarmonyLib.PatchProcessor.ReadMethodBody(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator)
+  name: ReadMethodBody(MethodBase, ILGenerator)
+  href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_ReadMethodBody_System_Reflection_MethodBase_System_Reflection_Emit_ILGenerator_
+  commentId: M:HarmonyLib.PatchProcessor.ReadMethodBody(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator)
+  fullName: HarmonyLib.PatchProcessor.ReadMethodBody(System.Reflection.MethodBase, System.Reflection.Emit.ILGenerator)
+  nameWithType: PatchProcessor.ReadMethodBody(MethodBase, ILGenerator)
 - uid: HarmonyLib.PatchProcessor.ReadMethodBody*
   name: ReadMethodBody
   href: api/HarmonyLib.PatchProcessor.html#HarmonyLib_PatchProcessor_ReadMethodBody_

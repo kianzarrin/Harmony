@@ -415,6 +415,104 @@ namespace HarmonyLib
 			var stfldCode = field.IsStatic ? OpCodes.Stsfld : OpCodes.Stfld;
 			return code.opcode == stfldCode && Equals(code.operand, field);
 		}
+
+		/// <summary>Adds labels to the code instruction and return it</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/></param>
+		/// <param name="labels">One or several <see cref="Label"/> to add</param>
+		/// <returns>The same code instruction</returns>
+		public static CodeInstruction WithLabels(this CodeInstruction code, params Label[] labels)
+		{
+			code.labels.AddRange(labels);
+			return code;
+		}
+
+		/// <summary>Adds labels to the code instruction and return it</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/></param>
+		/// <param name="labels">An enumeration of <see cref="Label"/></param>
+		/// <returns>The same code instruction</returns>
+		public static CodeInstruction WithLabels(this CodeInstruction code, IEnumerable<Label> labels)
+		{
+			code.labels.AddRange(labels);
+			return code;
+		}
+
+		/// <summary>Extracts all labels from the code instruction and returns them</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/></param>
+		/// <returns>A list of <see cref="Label"/></returns>
+		public static List<Label> ExtractLabels(this CodeInstruction code)
+		{
+			var labels = new List<Label>(code.labels);
+			code.labels.Clear();
+			return labels;
+		}
+
+		/// <summary>Moves all labels from the code instruction to a different one</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/> to move the labels from</param>
+		/// <param name="other">The <see cref="CodeInstruction"/> to move the labels to</param>
+		/// <returns>The code instruction labels were moved from (now empty)</returns>
+		public static CodeInstruction MoveLabelsTo(this CodeInstruction code, CodeInstruction other)
+		{
+			_ = other.WithLabels(code.ExtractLabels());
+			return code;
+		}
+
+		/// <summary>Moves all labels from a different code instruction to the current one</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/> to move the labels from</param>
+		/// <param name="other">The <see cref="CodeInstruction"/> to move the labels to</param>
+		/// <returns>The code instruction that received the labels</returns>
+		public static CodeInstruction MoveLabelsFrom(this CodeInstruction code, CodeInstruction other)
+		{
+			return code.WithLabels(other.ExtractLabels());
+		}
+
+		/// <summary>Adds ExceptionBlocks to the code instruction and return it</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/></param>
+		/// <param name="blocks">One or several <see cref="ExceptionBlock"/> to add</param>
+		/// <returns>The same code instruction</returns>
+		public static CodeInstruction WithBlocks(this CodeInstruction code, params ExceptionBlock[] blocks)
+		{
+			code.blocks.AddRange(blocks);
+			return code;
+		}
+
+		/// <summary>Adds ExceptionBlocks to the code instruction and return it</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/></param>
+		/// <param name="blocks">An enumeration of <see cref="ExceptionBlock"/></param>
+		/// <returns>The same code instruction</returns>
+		public static CodeInstruction WithBlocks(this CodeInstruction code, IEnumerable<ExceptionBlock> blocks)
+		{
+			code.blocks.AddRange(blocks);
+			return code;
+		}
+
+		/// <summary>Extracts all ExceptionBlocks from the code instruction and returns them</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/></param>
+		/// <returns>A list of <see cref="ExceptionBlock"/></returns>
+		public static List<ExceptionBlock> ExtractBlocks(this CodeInstruction code)
+		{
+			var blocks = new List<ExceptionBlock>(code.blocks);
+			code.blocks.Clear();
+			return blocks;
+		}
+
+		/// <summary>Moves all ExceptionBlocks from the code instruction to a different one</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/> to move the ExceptionBlocks from</param>
+		/// <param name="other">The <see cref="CodeInstruction"/> to move the ExceptionBlocks to</param>
+		/// <returns>The code instruction blocks were moved from (now empty)</returns>
+		public static CodeInstruction MoveBlocksTo(this CodeInstruction code, CodeInstruction other)
+		{
+			_ = other.WithBlocks(code.ExtractBlocks());
+			return code;
+		}
+
+		/// <summary>Moves all ExceptionBlocks from a different code instruction to the current one</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/> to move the ExceptionBlocks from</param>
+		/// <param name="other">The <see cref="CodeInstruction"/> to move the ExceptionBlocks to</param>
+		/// <returns>The code instruction that received the blocks</returns>
+		public static CodeInstruction MoveBlocksFrom(this CodeInstruction code, CodeInstruction other)
+		{
+			return code.WithBlocks(other.ExtractBlocks());
+		}
 	}
 
 	/// <summary>General extensions for collections</summary>
@@ -475,6 +573,19 @@ namespace HarmonyLib
 		public static T[] AddRangeToArray<T>(this T[] sequence, T[] items)
 		{
 			return (sequence ?? Enumerable.Empty<T>()).Concat(items).ToArray();
+		}
+	}
+
+	/// <summary>General extensions for collections</summary>
+	/// 
+	public static class MethodBaseExtensions
+	{
+		/// <summary>Tests a class member if it has an IL method body (external methods for example don't have a body)</summary>
+		/// <param name="member">The member to test</param>
+		/// <returns>Returns true if the member has an IL body or false if not</returns>
+		public static bool HasMethodBody(this MethodBase member)
+		{
+			return (member.GetMethodBody()?.GetILAsByteArray()?.Length ?? 0) > 0;
 		}
 	}
 }
