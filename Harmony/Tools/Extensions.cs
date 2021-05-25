@@ -335,6 +335,58 @@ namespace HarmonyLib
 			return Equals(code.operand, method);
 		}
 
+		/// <summary>Tests if the code instruction calls the method</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/></param>
+		/// <param name="type">The class/type where the method is declared</param>
+		/// <param name="name">The name of the method (case sensitive)</param>
+		/// <param name="parameters">Optional parameters to target a specific overload of the method</param>
+		/// <param name="generics">Optional list of types that define the generic version of the method</param>
+		/// <returns>True if the instruction calls the method or constructor</returns>
+		///
+		public static bool Calls(this CodeInstruction code, Type type, string name, Type[] parameters = null, Type[] generics = null)
+		{
+			return code.Calls(AccessTools.Method(type, name, parameters, generics));
+		}
+
+		/// <summary>Tests if the code instruction calls the method</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/></param>
+		/// <param name="typeColonMethodname">The target method in the form <c>TypeFullName:MethodName</c>, where the type name matches a form recognized by <a href="https://docs.microsoft.com/en-us/dotnet/api/system.type.gettype">Type.GetType</a> like <c>Some.Namespace.Type</c>.</param>
+		/// <param name="parameters">Optional parameters to target a specific overload of the method</param>
+		/// <param name="generics">Optional list of types that define the generic version of the method</param>
+		/// <returns>True if the instruction calls the method or constructor</returns>
+		///
+		public static bool Calls(this CodeInstruction code, string typeColonMethodname, Type[] parameters = null, Type[] generics = null)
+		{
+			return code.Calls(AccessTools.Method(typeColonMethodname, parameters, generics));
+		}
+
+		/// <summary>Tests if the code instruction calls the method</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/></param>
+		/// <typeparam name="TDelegate">delegate that has the same argument types as the intented overloaded method</typeparam>
+		/// <param name="type">The class/type where the method is declared</param>
+		/// <param name="name">The name of the method (case sensitive). Uses delegate name by default.</param>
+		/// <param name="instance">is instance delegate (skips the first parameter)</param>
+		/// <returns>True if the instruction calls the method or constructor</returns>
+		///
+		public static bool Calls<TDelegate>(this CodeInstruction code, Type type, string name = null, bool instance = false)
+			where TDelegate : Delegate
+		{
+			return code.Calls(AccessTools.Method<TDelegate>(type, name, instance));
+		}
+
+		/// <summary>Tests if the code instruction calls the method</summary>
+		/// <param name="code">The <see cref="CodeInstruction"/></param>
+		/// <typeparam name="TDelegate">delegate that has the same argument types as the intented overloaded method</typeparam>
+		/// <param name="typeColonMethodname">The target method in the form <c>TypeFullName:MethodName</c>, where the type name matches a form recognized by <a href="https://docs.microsoft.com/en-us/dotnet/api/system.type.gettype">Type.GetType</a> like <c>Some.Namespace.Type</c>.</param>
+		/// <param name="instance">is instance delegate (skips the first parameter)</param>
+		/// <returns>True if the instruction calls the method or constructor</returns>
+		///
+		public static bool Calls<TDelegate>(this CodeInstruction code, string typeColonMethodname = null, bool instance = false)
+			where TDelegate : Delegate
+		{
+			return code.Calls(AccessTools.Method<TDelegate>(typeColonMethodname, instance));
+		}
+
 		/// <summary>Tests if the code instruction loads a constant</summary>
 		/// <param name="code">The <see cref="CodeInstruction"/></param>
 		/// <returns>True if the instruction loads a constant</returns>
